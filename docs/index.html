@@ -10,113 +10,8 @@
   <meta name="theme-color" content="#2b1836" />
   <link rel="apple-touch-icon" href="icon-192.png" />
 
-  <style>
-    :root {
-      --bg-grad: linear-gradient(135deg, #2b1836 0%, #0e0c15 100%);
-      --card: rgba(255, 255, 255, 0.05);
-      --text: #ffffff;
-      --muted: rgba(255, 255, 255, 0.7);
-      --btn: rgba(255, 255, 255, 0.05);
-      --btn-hover: rgba(255, 255, 255, 0.1);
-      --border: rgba(255, 255, 255, 0.2);
-      --border-hover: rgba(255, 255, 255, 0.5);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: var(--bg-grad);
-      background-attachment: fixed;
-      color: var(--text);
-      min-height: 100vh;
-    }
-    
-    header {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 50px 18px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      font-weight: 500;
-    }
-    p { margin: 0 0 10px; color: var(--muted); line-height: 1.4; }
-    
-    .searchbox {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    input {
-      flex: 1;
-      max-width: 400px;
-      padding: 12px 16px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--card);
-      color: var(--text);
-      backdrop-filter: blur(4px);
-      outline: none;
-    }
-    input:focus { border-color: var(--border-hover); }
-    input::placeholder { color: var(--muted); }
-    
-    .tag {
-      display: inline-block; padding: 6px 12px; border-radius: 999px;
-      background: var(--card); color: var(--muted); font-size: 13px; border: 1px solid var(--border);
-    }
-
-    /* Grid layout */
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 10px 18px 40px; }
-    
-    .grid { 
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-auto-flow: dense; 
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      backdrop-filter: blur(10px);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    /* Card duplo no desktop */
-    @media (min-width: 1030px) {
-      .card-tall {
-        grid-row: span 2;
-      }
-    }
-
-    .card h2 { margin: 0 0 16px; font-size: 17px; text-align: center; font-weight: 500;}
-    .btns { display: flex; flex-direction: column; gap: 10px; flex: 1; }
-    
-    /* Botões */
-    a.btn {
-      display: flex; justify-content: center; align-items: center;
-      padding: 12px 16px; border-radius: 8px; font-size: 14px;
-      background: var(--btn); color: #fff; text-align: center;
-      text-decoration: none; font-weight: 500; border: 1px solid var(--border);
-      transition: background 0.2s, border 0.2s;
-    }
-    a.btn:hover {
-      background: var(--btn-hover); border: 1px solid var(--border-hover);
-    }
-    .note { margin-top: auto; padding-top: 16px; color: var(--muted); font-size: 12px; text-align: center; }
-    .hidden { display: none !important; }
-
-  </style>
+  <!-- Puxando o estilo CSS externo -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -131,16 +26,11 @@
 <div class="wrap">
   <div class="grid">
 
-    <!-- Categoria: Sistemas Operacionais -->
     <section class="card item card-tall" data-name="windows 10 32 64 11 ltsc server microsoft ubuntu linux mint zorin iso sistema operacional os">
       <h2>Sistemas Operacionais</h2>
       <div class="btns">
-        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/software-download/windows10">
-          Windows 10
-        </a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/software-download/windows11">
-          Windows 11
-        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/software-download/windows10">Windows 10</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/software-download/windows11">Windows 11</a>
         <a class="btn" target="_blank" rel="noopener" href="https://ubuntu.com/download">Ubuntu Linux</a>
         <a class="btn" target="_blank" rel="noopener" href="https://linuxmint.com/download.php">Linux Mint</a>
         <a class="btn" target="_blank" rel="noopener" href="https://zorin.com/os/download/">Zorin OS</a>
@@ -148,55 +38,36 @@
       
     </section>
 
-    <!-- Categoria: Acesso Remoto -->
     <section class="card item" data-name="anydesk teamviewer acesso remoto suporte controle">
       <h2>Acesso Remoto</h2>
       <div class="btns">
-        <a class="btn" target="_blank" rel="noopener" href="https://anydesk.com/download">
-          AnyDesk
-        </a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.teamviewer.com/download/">
-          TeamViewer
-        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://anydesk.com/download">AnyDesk</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.teamviewer.com/download/">TeamViewer</a>
       </div>
     </section>
 
-    <!-- Categoria: Segurança e Anti-Malware -->
     <section class="card item" data-name="malwarebytes eset antivirus malware virus segurança protecao">
       <h2>Segurança e Anti-Malware</h2>
       <div class="btns">
-        <a class="btn" target="_blank" rel="noopener" href="https://www.malwarebytes.com/pt-br/home-hl?x-clickref=1100lDC4xePQ&gad_source=1&gad_campaignid=22268479401&gbraid=0AAAAA-7CE_I6l9NhM2cNPSqMMsedgTMXx">
-          MalwareBytes
-        </a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.eset.com/br/antivirus-domestico/planos-de-protecao/?utm_source=google&utm_medium=cpc&utm_campaign=_br_pt_b2c_google_s_nb_rev_gen_md_generic-terms&utm_content=Malware&gad_source=1&gad_campaignid=6476989914&gbraid=0AAAAADr7BfACG9hlACh6Mh_0eDHuyGioQ">
-          ESET
-        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.malwarebytes.com/pt-br/home-hl?x-clickref=1100lDC4xePQ&gad_source=1&gad_campaignid=22268479401&gbraid=0AAAAA-7CE_I6l9NhM2cNPSqMMsedgTMXx">MalwareBytes</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.eset.com/br/antivirus-domestico/planos-de-protecao/?utm_source=google&utm_medium=cpc&utm_campaign=_br_pt_b2c_google_s_nb_rev_gen_md_generic-terms&utm_content=Malware&gad_source=1&gad_campaignid=6476989914&gbraid=0AAAAADr7BfACG9hlACh6Mh_0eDHuyGioQ">ESET</a>
       </div>
     </section>
 
-    <!-- Categoria: Utilitários de Sistema -->
     <section class="card item" data-name="driver booster iobit winrar rarlab zip compactador utilitarios drivers">
       <h2>Utilitários de Sistema</h2>
       <div class="btns">
-        <a class="btn" target="_blank" rel="noopener" href="https://www.iobit.com/en/driver-booster.php">
-          Driver Booster
-        </a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.win-rar.com/download.html">
-          WinRAR
-        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.iobit.com/en/driver-booster.php">Driver Booster</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.win-rar.com/download.html">WinRAR</a>
       </div>
     </section>
 
-    <!-- Categoria: Produtividade e Comunicação -->
     <section class="card item" data-name="office 2016 2019 2024 microsoft 365 odt deploy slack comunicacao produtividade chat">
       <h2>Produtividade e Comunicação</h2>
       <div class="btns">
-        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/microsoft-365/download-office">
-          Microsoft 365 — Office
+        <a class="btn" target="_blank" rel="noopener" href="https://www.microsoft.com/microsoft-365/download-office">Microsoft 365 — Office
         </a>
-        <a class="btn" target="_blank" rel="noopener" href="https://slack.com/downloads/">
-          Slack
-        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://slack.com/downloads/">Slack</a>
       </div>
     </section>
 
@@ -206,42 +77,13 @@
 <footer>
   <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
     <p style="font-size: 15px; margin-bottom: 15px; color: var(--text);">Feito com ❤️ por Wanderson Lopes</p>
-    <a class="btn secondary" style="display: inline-block; padding: 12px 24px; font-size: 14px; border-radius: 8px; border: 1px solid var(--border); color: #fff; text-decoration: none; transition: background 0.2s, border 0.2s;" target="_blank" rel="noopener" href="https://wls-djsf.github.io/devLinks/" onmouseover="this.style.background='var(--btn-hover)'; this.style.borderColor='var(--border-hover)';" onmouseout="this.style.background='transparent'; this.style.borderColor='var(--border)';">
+    <a class="btn secondary" style="display: inline-block; padding: 12px 24px; font-size: 14px; border-radius: 8px; border: 1px solid var(--border); color: #fff; text-decoration: none; transition: background 0.2s, border 0.2s;" target="_blank" rel="noopener" href="https://wls-djsf.github.io/devLinks/" onmouseover="this.style.background='var(--btn-hover)'; this.style.borderColor='var(--border-hover)';" onmouseout="this.style.background='transparent'; this.style.borderColor='var(--border';">
       Acesse meu Agregador de Links
     </a>
   </div>
 </footer>
 
-<!-- Script que filtra a busca -->
-<script>
-  const q = document.getElementById('q');
-  const items = Array.from(document.querySelectorAll('.item'));
-  const count = document.getElementById('count');
-
-  function refresh(){
-    const term = (q.value || '').trim().toLowerCase();
-    let shown = 0;
-    for (const el of items){
-      const name = (el.getAttribute('data-name') || '').toLowerCase();
-      const ok = !term || name.includes(term);
-      el.classList.toggle('hidden', !ok);
-      if (ok) shown++;
-    }
-    count.textContent = `${shown}/${items.length} categorias`;
-  }
-  q.addEventListener('input', refresh);
-  refresh();
-</script>
-
-<!-- Ativação e instalação do PWA no celular -->
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js')
-        .then(reg => console.log('Service Worker ativo, truta!', reg))
-        .catch(err => console.log('Erro ao iniciar Service Worker:', err));
-    });
-  }
-</script>
+<!-- Puxando a inteligência do JavaScript externo -->
+<script src="script.js"></script>
 </body>
 </html>
