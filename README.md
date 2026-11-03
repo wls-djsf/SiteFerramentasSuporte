@@ -29,6 +29,28 @@ A interface foi desenhada com forte foco na experiência do usuário (UX), utili
 - 🎨 **Design Moderno:** Interface baseada em *Glassmorphism* (efeitos de vidro e desfoque) para um visual limpo e redução do cansaço visual.
 - 🔒 **Segurança em Primeiro Lugar:** Redirecionamento estrito para URLs oficiais das empresas desenvolvedoras.
 
+## 📱 Instalação do Aplicativo (PWA)
+
+Este projeto possui suporte a **PWA (Progressive Web App)**, permitindo que você instale o Hub diretamente no seu smartphone ou computador. Ele funcionará como um aplicativo nativo (em tela cheia e com ícone próprio), sem a necessidade de passar por lojas de aplicativos (Play Store ou App Store).
+
+### 🟢 No Android (Google Chrome)
+1. Acesse o site oficial pelo **Google Chrome**.
+2. O navegador exibirá um banner na parte inferior: **"Adicionar à tela inicial"**. Clique nele.
+3. Se o banner não aparecer, toque nos **três pontinhos (⋮)** no canto superior direito do navegador.
+4. Selecione a opção **"Instalar aplicativo"** ou **"Adicionar à tela inicial"**.
+5. Confirme e o ícone do Hub aparecerá na sua gaveta de aplicativos.
+
+### 🍎 No iPhone (iOS / Safari)
+1. Acesse o site utilizando o navegador **Safari**.
+2. Toque no ícone de **Compartilhar** (um quadrado com uma seta apontando para cima, localizado na barra inferior).
+3. Role o menu para cima e selecione **"Adicionar à Tela de Início"** (Add to Home Screen).
+4. Confirme clicando em **"Adicionar"** no canto superior direito.
+
+### 💻 No Computador (Chrome / Edge)
+1. Acesse a aplicação web pelo navegador.
+2. Na barra de endereços (onde fica a URL), olhe para o lado direito (perto do ícone de estrela dos favoritos) e clique no botão de **Instalar**.
+3. Confirme a instalação e o Hub abrirá em uma janela própria, livre das abas do navegador.
+
 ## 🚀 Tecnologias Utilizadas
 
 - **HTML5:** Estrutura semântica e acessível.
