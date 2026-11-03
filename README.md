@@ -56,7 +56,18 @@ Este projeto possui suporte a **PWA (Progressive Web App)**, permitindo que voc�
 - **HTML5:** Estrutura semântica e acessível.
 - **CSS3:** Variáveis de cor, CSS Grid (Grid Auto-Flow Dense), Media Queries e propriedades de `backdrop-filter`.
 - **JavaScript (Vanilla):** Lógica otimizada de filtro de busca e manipulação de DOM.
+## ♿ Acessibilidade (A11y)
 
+Este projeto foi desenvolvido com foco na inclusão, garantindo que usuários e profissionais de suporte com deficiência visual ou limitações motoras possam utilizar a ferramenta de forma autônoma.
+
+### Como utilizar:
+* **Navegação por Teclado:** Utilize a tecla `Tab` para navegar por toda a interface. O layout possui foco visual de alto contraste (borda roxa) para indicar claramente qual botão ou campo está selecionado no momento.
+* **Skip Link (Pular para o Conteúdo):** Ao iniciar a navegação com a tecla `Tab`, um botão oculto "Pular para os downloads" aparecerá no canto superior esquerdo. Pressione `Enter` nele para pular o cabeçalho e a barra de pesquisa, descendo diretamente para a área das ferramentas.
+* **Suporte a Leitores de Tela:** A estrutura do código foi otimizada para softwares como NVDA, JAWS, VoiceOver e TalkBack.
+  * **Links Descritivos:** Todos os botões possuem atributos estruturais (`aria-label`) que fornecem um contexto completo em áudio (exemplo: em vez de ler apenas "Windows 11", o leitor dirá "Baixar o sistema Windows 11").
+  * **Busca com Feedback de Áudio:** A barra de pesquisa conta com avisos dinâmicos (`aria-live`). Ao digitar um termo, o leitor de tela anuncia em tempo real quantas categorias correspondentes foram encontradas, sem que o usuário precise enxergar a tela mudando.
+
+    
 ## ⚙️ Como hospedar (Deploy)
 
 Para que o site fique online de forma gratuita através do GitHub Pages, siga os passos abaixo:
