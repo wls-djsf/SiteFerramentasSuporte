@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1607799279861-4ddbc0179a0b?q=80&w=1200&auto=format&fit=crop" alt="Banner Ferramentas de Suporte" width="100%" />
+  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Banner Ferramentas de Suporte" width="100%" />
   
   # 🛠️ Hub de Ferramentas de Suporte de TI
   
