@@ -1,4 +1,6 @@
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=300&q=80" alt="Banner Ferramentas de Suporte" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;" />
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=300&q=80" alt="Banner Ferramentas de Suporte" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;" />
+  
   # 🛠️ Hub de Ferramentas de Suporte de TI
   
   **Um diretório seguro e centralizado para downloads oficiais de sistemas operacionais e utilitários essenciais.**
@@ -7,7 +9,7 @@
   [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deploy%20Feito-blue?style=for-the-badge&logo=github)]()
   [![License](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=for-the-badge)]()
 
-  ### 🌐 [Acessar a Aplicação Online](https://wls-djsf.github.io/SiteFerramentasSuporte/)
+  ### 🌐 <a href="https://wls-djsf.github.io/SiteFerramentasSuporte/" target="_blank">Acessar a Aplicação Online</a>
 </div>
 
 <br>
