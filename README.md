@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Banner Ferramentas de Suporte" width="100%" />
-  
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=300&q=80" alt="Banner Ferramentas de Suporte" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;" />
   # 🛠️ Hub de Ferramentas de Suporte de TI
   
   **Um diretório seguro e centralizado para downloads oficiais de sistemas operacionais e utilitários essenciais.**
