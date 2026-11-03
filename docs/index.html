@@ -62,16 +62,34 @@
       background: var(--card); color: var(--muted); font-size: 13px; border: 1px solid var(--border);
     }
 
-    /* Grid e Cards */
+    /* Layout Masonry (Cascata) com Colunas CSS */
     .wrap { max-width: 1200px; margin: 0 auto; padding: 10px 18px 40px; }
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); align-items: start; }
+    
+    .grid { 
+      column-count: 3; 
+      column-gap: 16px; 
+    }
+    
+    /* Responsividade das colunas */
+    @media (max-width: 992px) {
+      .grid { column-count: 2; }
+    }
+    @media (max-width: 650px) {
+      .grid { column-count: 1; }
+    }
+
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 24px;
       backdrop-filter: blur(10px);
+      break-inside: avoid; /* Evita que o card quebre na metade entre colunas */
+      margin-bottom: 16px; /* Espaçamento vertical entre os cards */
+      display: inline-block;
+      width: 100%;
     }
+    
     .card h2 { margin: 0 0 20px; font-size: 18px; text-align: center; font-weight: 500;}
     .btns { display: grid; gap: 12px; }
     
@@ -117,7 +135,7 @@
         <a class="btn" target="_blank" rel="noopener" href="https://linuxmint.com/download.php">Linux Mint</a>
         <a class="btn" target="_blank" rel="noopener" href="https://zorin.com/os/download/">Zorin OS</a>
       </div>
-      <div class="note">Obs.: versões exatas (ex: LTSC) aparecem conforme licença oficial.</div>
+      
     </section>
 
     <!-- Categoria: Acesso Remoto -->
