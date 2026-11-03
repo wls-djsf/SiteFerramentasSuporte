@@ -10,6 +10,7 @@
   [![License](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=for-the-badge)]()
 
   ### 🌐 <a href="https://wls-djsf.github.io/SiteFerramentasSuporte/" target="_blank">Acessar a Aplicação Online</a>
+  *(Dica: Segure Ctrl + Clique para abrir numa nova aba)*
 </div>
 
 <br>
