@@ -9,7 +9,7 @@
   --border-hover: rgba(255, 255, 255, 0.5);
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; } /* Corrigido de "-" para "*" */
 
 body {
   margin: 0;
@@ -124,4 +124,43 @@ a.btn:hover {
 input:focus-visible, a.btn:focus-visible, a:focus-visible, .skip-link:focus-visible {
   outline: 3px solid #b366ff;
   outline-offset: 2px;
+}
+
+/* =========================================
+   RODAPÉ (Footer)
+   ========================================= */
+
+.site-footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.footer-link {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-link:hover {
+  background: var(--btn-hover);
+  border-color: var(--border-hover);
 }
